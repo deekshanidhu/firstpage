@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+body, h1, h2, h3, p, ul, li, a, form, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0;
+    margin: 0;
+ 
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+   border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #83888c;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+   
+}
+
+header {
+    background: #bda5a5;
+    color: #e2dede;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 800;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    
+    list-style: circle;
+    padding: 0;
+    display: flex;
+    justify-content: flex-center;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #940404;
+    text-align: center;
+    text-decoration: none;
+}
+
+.land {
+    position: relative;
+    text-align: center;
+    color: #b01b1b;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #a66c0e;
+    color: #820808;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.card-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+    .service-item {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .service-item {
+        width: 100%;
+    }
+}
+.brand-logo {
+    height: 100px;
+    width: 100px;
+    background: url("download.png");
+    margin: auto;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  }
+  
+  .brand-title {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #b98d6d;
+    letter-spacing: 1px;
+  }
+  
+  .inputs {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  label, input, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  label {
+    margin-bottom: 4px;
+  }
+  
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  input::placeholder {
+    color: gray;
+  }
+  
+  input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  
+  button {
+    color: white;
+    margin-top: 20px;
+    background: #c59db9;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: none;
+  }
+  
+  
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #d31515;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
