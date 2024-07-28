@@ -15,6 +15,7 @@ body {
  
 }
 
+
 .container {
     width: 80%;
     margin: auto;
@@ -58,7 +59,11 @@ nav ul li a {
     text-align: center;
     text-decoration: none;
 }
-
+@media (max-width: 768px) {
+    .nav ul li a {
+        width: calc(50% - 20px);
+    }
+}
 .land {
     position: relative;
     text-align: center;
@@ -130,21 +135,31 @@ h2 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 992px) {
-    .service-item {
-        width: calc(33.33% - 20px);
-    }
-}
-
 @media (max-width: 768px) {
-    .service-item {
-        width: calc(50% - 20px);
+    header nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
     }
-}
 
-@media (max-width: 576px) {
+    .hero-text {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .card-block {
+        flex-direction: column;
+    }
+
     .service-item {
+        margin: 20px auto;
+    }
+
+    form {
         width: 100%;
+        padding: 20px;
     }
 }
 .brand-logo {
